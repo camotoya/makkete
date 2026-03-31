@@ -71,6 +71,14 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
     body: JSON.stringify(data),
   })
     .then(() => {
+      // Enviar evento de lead a Google Analytics
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'formulario',
+          event_label: data.servicio,
+          value: 1,
+        });
+      }
       btn.textContent = 'Enviado!';
       btn.style.background = 'linear-gradient(135deg, #84cc16 0%, #06b6d4 100%)';
       form.reset();
