@@ -135,14 +135,14 @@ ul { list-style: none; }
   gap: 10px;
 }
 .nav__logo-img {
-  height: 40px;
+  height: 44px;
   width: auto;
 }
 .nav__logo-text {
   font-family: 'Syne', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--black);
 }
 .nav__links {
@@ -517,14 +517,14 @@ ul { list-style: none; }
   gap: 10px;
 }
 .footer__logo-img {
-  height: 32px;
+  height: 36px;
   width: auto;
 }
 .footer__logo-text {
   font-family: 'Syne', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--black);
 }
 .footer__copy {
