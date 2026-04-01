@@ -73,11 +73,12 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
   }
 
   const data = {
-    nombre: form.querySelector('input[type="text"]').value,
-    email: form.querySelector('input[type="email"]').value,
-    empresa: form.querySelectorAll('input[type="text"]')[1].value,
-    servicio: form.querySelector('select').value,
-    mensaje: form.querySelector('textarea').value,
+    nombre: form.querySelector('input[name="nombre"]').value,
+    email: form.querySelector('input[name="email"]').value,
+    telefono: form.querySelector('input[name="telefono"]').value,
+    empresa: form.querySelector('input[name="empresa"]').value,
+    servicio: form.querySelector('select[name="servicio"]').value,
+    mensaje: form.querySelector('textarea[name="mensaje"]').value,
     user_agent: navigator.userAgent,
     page_url: window.location.href,
     fbp: getCookie('_fbp'),
