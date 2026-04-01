@@ -130,8 +130,18 @@ ul { list-style: none; }
   justify-content: space-between;
 }
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav__logo-img {
+  height: 40px;
+  width: auto;
+}
+.nav__logo-text {
+  font-family: 'Syne', sans-serif;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 2px;
   color: var(--black);
 }
@@ -502,8 +512,18 @@ ul { list-style: none; }
   justify-content: space-between;
 }
 .footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__logo-img {
+  height: 32px;
+  width: auto;
+}
+.footer__logo-text {
+  font-family: 'Syne', sans-serif;
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 2px;
   color: var(--black);
 }
