@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ── Form handler ──
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzUtBjUN4decvFMH9z4wLs66mpaBKVSjVthxDjgkYKlpJkSQjmHTEGIcLlmC9ztYsVk/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9fuI5rg7z1eTG-2ebIY-WCC3zQ4xlgiGoVS9n1HpjufX3a-Bib7TlYjbNCsh_R6PH/exec';
 
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
