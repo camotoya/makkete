@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ── Form handler ──
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwzPqTGdAZMA7H1NYK6sAd_miPqTE-zkx3R6Nbuy_fivkcX4IO6JXOgYTQ_aDkbu7ZV/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbypoW9aBeY-aKSb-SjGulKsM6Dn3jZFfd8ydyZcNRvrG2zcjFFjdHOoG4vmjyDJbco0/exec';
 
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
