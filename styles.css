@@ -182,7 +182,7 @@ ul { list-style: none; }
   width: auto;
 }
 .nav__logo-wordmark {
-  height: 77px;
+  height: 54px;
   width: auto;
 }
 .nav__links {
@@ -731,7 +731,7 @@ ul { list-style: none; }
   width: auto;
 }
 .footer__logo-wordmark--white {
-  height: 64px;
+  height: 45px;
   width: auto;
   filter: brightness(0) invert(1);
 }
