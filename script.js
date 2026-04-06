@@ -62,6 +62,28 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach(section => sectionObserver.observe(section));
 
+// ── Story scroll storytelling ──
+const storyBlocks = document.querySelectorAll('.story__block');
+const storyCounter = document.getElementById('storyCounter');
+
+const storyObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        if (storyCounter) {
+          storyCounter.textContent = entry.target.dataset.step;
+        }
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+storyBlocks.forEach(block => storyObserver.observe(block));
+
 // ── Hero word-by-word animation ──
 const heroWords = document.querySelectorAll('.anim-word');
 heroWords.forEach((word, i) => {
