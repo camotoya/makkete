@@ -124,29 +124,6 @@ const counterObserver = new IntersectionObserver(
 const statsEl = document.querySelector('.hero__stats');
 if (statsEl) counterObserver.observe(statsEl);
 
-// ── Custom cursor ──
-const cursor = document.getElementById('cursor');
-if (cursor && window.matchMedia('(pointer: fine)').matches) {
-  let mouseX = 0, mouseY = 0;
-  let cursorX = 0, cursorY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    if (!cursor.classList.contains('visible')) cursor.classList.add('visible');
-  });
-
-  document.addEventListener('mouseleave', () => cursor.classList.remove('visible'));
-
-  function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.15;
-    cursorY += (mouseY - cursorY) * 0.15;
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    requestAnimationFrame(animateCursor);
-  }
-  requestAnimationFrame(animateCursor);
-}
 
 // ── Form handler ──
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbypoW9aBeY-aKSb-SjGulKsM6Dn3jZFfd8ydyZcNRvrG2zcjFFjdHOoG4vmjyDJbco0/exec';

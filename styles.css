@@ -801,24 +801,6 @@ ul { list-style: none; }
   transform: translateX(4px);
 }
 
-/* ── Custom cursor ── */
-.cursor {
-  position: fixed;
-  width: 12px;
-  height: 12px;
-  background: var(--magenta);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease-out;
-  opacity: 0;
-}
-.cursor.visible { opacity: 1; }
-@media (pointer: coarse) {
-  .cursor { display: none; }
-}
 
 /* ── Hero word animations ── */
 .anim-word {
