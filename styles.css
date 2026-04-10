@@ -562,6 +562,17 @@ ul { list-style: none; }
   transition: color 0.2s ease-out;
 }
 .founder-card__links a:hover { color: var(--electric); }
+.founder-card__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.founder-card__badge {
+  transform: scale(0.55);
+  transform-origin: left center;
+  max-height: 150px;
+  overflow: hidden;
+}
 
 /* ── Process ── */
 .process {
