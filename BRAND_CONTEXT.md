@@ -154,6 +154,8 @@ Minimalismo blanco y negro como base — con explosiones de color como acento. E
 ### Tracking y Ads instalados
 - **Google Tag Manager:** GTM-NRNJTD24
 - **Google Analytics 4:** G-SY2KGT19T1
+- **Google Ads:** AW-18069208452 (cuenta "Pixeles Makkete")
+  - Conversión "Registro Formulario": label `aE-xCKiw6pwcEIT7iKhD`
 - **Meta Pixel:** 1258734292500342
 
 ### Herramientas activas

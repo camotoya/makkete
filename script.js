@@ -180,6 +180,10 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
           event_label: data.servicio,
           value: 1,
         });
+        // Conversion para Google Ads (Registro Formulario)
+        gtag('event', 'conversion', {
+          send_to: 'AW-18069208452/aE-xCKiw6pwcEIT7iKhD',
+        });
       }
       // Enviar evento Lead a Meta Pixel
       if (typeof fbq === 'function') {
